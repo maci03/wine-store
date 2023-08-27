@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 
 const wines = [
@@ -8,17 +8,26 @@ const wines = [
 ];
 
 function App() {
+
+  const [cartItems, setCartItems] = useState([]);
+
+  const addToCart = wine => {
+    setCartItems ([...cartItems, wine]);
+  };
+
+
   return (
     <div className="App">
       <h1>Wine Store</h1>
       <div className="wine-list">
         <h2>Wine List</h2>
         <ul>
-          {wines.map(wine => (
+        {wines.map(wine => (
             <li key={wine.id}>
               {wine.name} - ${wine.price}
+              <button onClick={() => addToCart(wine)}>Add to Cart</button>
             </li>
-          ))}
+          ))};
         </ul>
       </div>
     </div>
