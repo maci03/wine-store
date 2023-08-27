@@ -27,7 +27,7 @@ function App() {
               {wine.name} - ${wine.price}
               <button onClick={() => addToCart(wine)}>Add to Cart</button>
             </li>
-          ))};
+          ))}
         </ul>
       </div>
     </div>
