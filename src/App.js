@@ -8,8 +8,6 @@ const wines = [
   { id: 3, name: 'Merlot', price: 20.99 },
 ];
 
-// ...existing imports...
-
 function App() {
   const [cartItems, setCartItems] = useState([]);
 
