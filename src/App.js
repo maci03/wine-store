@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import Cart from './Components/Cart';
 
 const wines = [
   { id: 1, name: 'Cabernet Sauvignon', price: 25.99 },
@@ -7,28 +8,43 @@ const wines = [
   { id: 3, name: 'Merlot', price: 20.99 },
 ];
 
-function App() {
+// ...existing imports...
 
+function App() {
   const [cartItems, setCartItems] = useState([]);
 
   const addToCart = wine => {
-    setCartItems ([...cartItems, wine]);
+    setCartItems([...cartItems, wine]);
   };
-
 
   return (
     <div className="App">
-      <h1>Wine Store</h1>
-      <div className="wine-list">
-        <h2>Wine List</h2>
-        <ul>
-        {wines.map(wine => (
-            <li key={wine.id}>
-              {wine.name} - ${wine.price}
+      <header className="header">
+        <div className="container">
+          <h1>Wine Store</h1>
+        </div>
+      </header>
+      <div className="container">
+        <div className="wine-list">
+          {wines.map(wine => (
+            <div className="wine-card" key={wine.id}>
+              <h3>{wine.name}</h3>
+              <p>${wine.price}</p>
               <button onClick={() => addToCart(wine)}>Add to Cart</button>
-            </li>
+            </div>
           ))}
-        </ul>
+        </div>
+        <div className="cart">
+          <h2>Cart</h2>
+          <ul className="cart-list">
+            {cartItems.map(item => (
+              <li className="cart-item" key={item.id}>
+                <span>{item.name}</span>
+                <span>${item.price}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );
