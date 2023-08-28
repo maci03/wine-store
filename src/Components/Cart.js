@@ -1,13 +1,15 @@
 import React from "react";
 
-function Cart ({cartItems}) {
+function Cart ({cartItems, removeFromCart}) {
     return(
         <div className="cart">
             <h2>Cart</h2>
-            <ul>
+            <ul className="cart-list">
                 {cartItems.map(item => (
-                <li key={item.id}>
-                    {item.name} - ${item.price}
+                <li key={item.id} className="cart-item">
+                    <span>{item.name}</span>
+                    <span>${item.price}</span>
+                    <button onClick={() => removeFromCart(item.id)}>Remove</button>
                 </li>
                 ))}
             </ul>
