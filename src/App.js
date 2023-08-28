@@ -8,10 +8,8 @@ const wines = [
   { id: 3, name: 'Merlot', price: 20.99 },
 ];
 
- const removeFromCart = itemId => {
-    const updatedCart = cartItems.filter(item => item.id !== itemId);
-    setCartItems(updatedCart);
- }
+
+
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -20,6 +18,10 @@ function App() {
     setCartItems([...cartItems, wine]);
   };
 
+  const removeFromCart = itemId => {
+    const updatedCart = cartItems.filter(item => item.id !== itemId);
+    setCartItems(updatedCart);
+  };
   return (
     <div className="App">
       <header className="header">
