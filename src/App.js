@@ -8,6 +8,11 @@ const wines = [
   { id: 3, name: 'Merlot', price: 20.99 },
 ];
 
+ const removeFromCart = itemId => {
+    const updatedCart = cartItems.filter(item => item.id !== itemId);
+    setCartItems(updatedCart);
+ }
+
 function App() {
   const [cartItems, setCartItems] = useState([]);
 
@@ -22,27 +27,28 @@ function App() {
           <h1>Wine Store</h1>
         </div>
       </header>
-      <div className="container">
-        <div className="wine-list">
-          {wines.map(wine => (
-            <div className="wine-card" key={wine.id}>
-              <h3>{wine.name}</h3>
-              <p>${wine.price}</p>
-              <button onClick={() => addToCart(wine)}>Add to Cart</button>
-            </div>
-          ))}
-        </div>
-        <div className="cart">
-          <h2>Cart</h2>
-          <ul className="cart-list">
-            {cartItems.map(item => (
-              <li className="cart-item" key={item.id}>
-                <span>{item.name}</span>
-                <span>${item.price}</span>
-              </li>
+        <div className="container">
+          <div className="wine-list">
+            {wines.map(wine => (
+              <div className="wine-card" key={wine.id}>
+                <h3>{wine.name}</h3>
+                <p>${wine.price}</p>
+                <button onClick={() => addToCart(wine)}>Add to Cart</button>
+              </div>
             ))}
-          </ul>
-        </div>
+          </div>
+          <div className="cart">
+            <h2>Cart</h2>
+            <ul className="cart-list">
+              {cartItems.map(item => (
+                <li className="cart-item" key={item.id}>
+                  <span>{item.name}</span>
+                  <span>${item.price}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <Cart cartItems={cartItems} removeFromCart={removeFromCart} />
       </div>
     </div>
   );
