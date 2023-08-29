@@ -27,11 +27,11 @@ function App() {
         </div>
           <nav className='menu'>
             <ul>
-              <li className='home'>Home</li>
-              <li className='sales'>Sales</li>
-              <li className='collection'>Collections</li>
-              <li className='about'>About Us</li>
-              <li className='contact'>Contact</li>
+            <li><a href="#home">Home</a></li>
+              <li><a href="#sales">Sales</a></li>
+              <li><a href="#collection">Collection</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>
       </header>
