@@ -8,9 +8,6 @@ const wines = [
   { id: 3, name: 'Merlot', price: 20.99 },
 ];
 
-
-
-
 function App() {
   const [cartItems, setCartItems] = useState([]);
 
@@ -28,6 +25,15 @@ function App() {
         <div className="container">
           <h1>Wine Store</h1>
         </div>
+          <nav className='menu'>
+            <ul>
+              <li className='home'>Home</li>
+              <li className='sales'>Sales</li>
+              <li className='collection'>Collections</li>
+              <li className='about'>About Us</li>
+              <li className='contact'>Contact</li>
+            </ul>
+          </nav>
       </header>
         <div className="container">
           <div className="wine-list">
