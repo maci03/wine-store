@@ -35,6 +35,24 @@ function App() {
             </ul>
           </nav>
       </header>
+      <div className="container">
+        <section id="home">
+          {/* ... */}
+        </section>
+        <section id="sales">
+          {/* ... */}
+        </section>
+        <section id="collection">
+          {/* ... */}
+        </section>
+        <section id="about">
+          {/* ... */}
+        </section>
+        <section id="contact">
+          {/* ... */}
+        </section>
+        ...
+      </div>
         <div className="container">
           <div className="wine-list">
             {wines.map(wine => (
