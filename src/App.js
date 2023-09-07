@@ -6,7 +6,10 @@ import Logo from "./assets/images/wine-store-logo.png";
 const wines = [
   { id: 1, name: 'Cabernet Sauvignon', price: 25.99 },
   { id: 2, name: 'Chardonnay', price: 18.99 },
-  { id: 3, name: 'Merlot', price: 20.99 },
+  { id: 3, name: 'Merlot', price: 24.99 },
+  { id: 3, name: 'Pinot', price: 35.99 },
+  { id: 3, name: 'Aetos', price: 205.99 },
+  { id: 3, name: 'Nodus', price: 20.99 }
 ];
 
 function App() {
@@ -26,7 +29,7 @@ function App() {
         <div className="container">
           <div className="logo">
             <img src={Logo}  alt="Wine Store Logo" />
-            <h1>Wine Store</h1>
+            <h1 className='wine-store-txt'>Wine Store</h1>
           </div>
           
         </div>

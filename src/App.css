@@ -131,7 +131,11 @@ body{
   margin: 10px;
 }
 .logo img {
-  width: 50px; 
+  width: 30px; 
   height: auto; 
+  padding-right: 10px;
 }
- 
+.wine-store-txt{
+  color: rgb(255, 179, 0);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
