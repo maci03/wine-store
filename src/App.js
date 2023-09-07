@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import Cart from './Components/Cart';
+import Logo from "./assets/images/wine-store-logo.png";
 
 const wines = [
   { id: 1, name: 'Cabernet Sauvignon', price: 25.99 },
@@ -23,8 +24,13 @@ function App() {
     <div className="App">
       <header className="header">
         <div className="container">
-          <h1>Wine Store</h1>
+          <div className="logo">
+            <img src={Logo}  alt="Wine Store Logo" />
+            <h1>Wine Store</h1>
+          </div>
+          
         </div>
+        
           <nav className='menu'>
             <ul>
             <li><a href="#home">Home</a></li>
@@ -37,21 +43,21 @@ function App() {
       </header>
       <div className="container">
         <section id="home">
-          {/* ... */}
+        
         </section>
         <section id="sales">
-          {/* ... */}
+       
         </section>
         <section id="collection">
-          {/* ... */}
+        
         </section>
         <section id="about">
-          {/* ... */}
+        
         </section>
         <section id="contact">
-          {/* ... */}
+        
         </section>
-        ...
+        
       </div>
         <div className="container">
           <div className="wine-list">
