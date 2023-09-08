@@ -31,14 +31,15 @@ function Auth() {
   };
 
   return (
-    <div>
+    <div className="auth-container">
       {user ? (
         <div>
           <p>Welcome, {user.email}!</p>
           <button onClick={handleSignOut}>Sign Out</button>
         </div>
       ) : (
-        <div>
+        <div className="login-form">
+          <h2>Login or Sign Up</h2>
           <input
             type="text"
             placeholder="Email"
@@ -49,8 +50,8 @@ function Auth() {
             placeholder="Password"
             onChange={(e) => setPassword(e.target.value)}
           />
-          <button onClick={handleSignIn}>Sign In</button>
-          <button onClick={handleSignUp}>Sign Up</button>
+          <button className="yellow-button" onClick={handleSignIn}>Sign In</button>
+          <button className="yellow-button" onClick={handleSignUp}>Sign Up</button>
         </div>
       )}
     </div>
