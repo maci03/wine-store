@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import Cart from './Components/Cart';
 import Logo from "./assets/images/wine-store-logo.png";
+import Auth from './Components/Auth';
 
 const wines = [
   { id: 1, name: 'Cabernet Sauvignon', price: 25.99 },
@@ -31,6 +32,7 @@ function App() {
             <img src={Logo}  alt="Wine Store Logo" />
             <h1 className='wine-store-txt'>Wine Store</h1>
           </div>
+      <Auth />
           
         </div>
         
