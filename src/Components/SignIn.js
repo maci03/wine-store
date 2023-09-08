@@ -1,20 +1,15 @@
-// src/components/SignIn.js
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
-import firebase from "../firebase";
 
 function SignIn() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const history = useHistory();
 
+  // Placeholder function for sign-in (add your own logic)
   const handleSignIn = async () => {
-    try {
-      await firebase.auth().signInWithEmailAndPassword(email, password);
-      history.push("/");
-    } catch (error) {
-      console.error(error.message);
-    }
+    // Implement sign-in logic here
+    history.push("/"); // Example: Redirect to home page after sign-in
   };
 
   return (
