@@ -1,141 +1,141 @@
 body{
-    font-family: arial, sans-serif;
-    margin: 0px;
-    padding: 0px;
+  font-family: arial, sans-serif;
+  margin: 0px;
+  padding: 0px;
 }
 .App{
-    text-align: center;
-    background-color: #f7f7f7;
-    padding: 2rem;
+  text-align: center;
+  background-color: #f7f7f7;
+  padding: 2rem;
 }
 
 .header h1{
-    margin: 0px;
+  margin: 0px;
 }
 .wine-list{
-    margin-top: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .wine-card{
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 1rem;
-    margin-bottom: 1.5rem;
-    width: calc(33.33% - 1rem);
-    box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  width: calc(33.33% - 1rem);
+  box-sizing: border-box;
 }
 .wine-card h3{
- margin: 0px;
+margin: 0px;
 }
 
 .wine-card button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    font-size: 0.9rem;
-    transition: background-color 0.3s;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
 }
 .wine-card button:hover {
-    background-color: #555;
-  }
+  background-color: #555;
+}
 
 .cart {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
-  
+
 .cart h2 {
-    margin: 0;
+  margin: 0;
 }
-  
+
 .cart-list {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
-  
+
 .cart-item {
-    border: 1px solid #ddd;
-    background-color: #fff;
-    padding: 0.5rem;
-    margin: 0.5rem 0;
-    display: flex;
-    justify-content: space-between;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
 }
 /* remove button */
 
 .cart-item {
-    border: 1px solid #ddd;
-    background-color: #fff;
-    padding: 0.5rem;
-    margin: 0.5rem 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .cart-item button {
-    background-color: #d9534f;
-    color: #fff;
-    border: none;
-    padding: 0.3rem 0.7rem;
-    cursor: pointer;
-    font-size: 0.8rem;
-    transition: background-color 0.3s;
-  }
-  
-  .cart-item button:hover {
-    background-color: #c9302c;
-  }
-  /*menu css  */
-  .menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-  }
-  
-  .menu li {
-    margin-right: 1rem;
-  }
-  
-  .menu a {
-    text-decoration: none;
-    color: #fbf7f7;
-    font-weight: bold;
-    transition: color 0.3s;
-  }
-  
-  .menu a:hover {
-    color: #555;
-  }
-.header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-  
-.header h1 {
+
+.cart-item button {
+  background-color: #d9534f;
+  color: #fff;
+  border: none;
+  padding: 0.3rem 0.7rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: background-color 0.3s;
+}
+
+.cart-item button:hover {
+  background-color: #c9302c;
+}
+/*menu css  */
+.menu ul {
+  list-style: none;
+  padding: 0;
   margin: 0;
+  display: flex;
+}
+
+.menu li {
+  margin-right: 1rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fbf7f7;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #555;
+}
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+margin: 0;
 }
 
 .logo{
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  margin: 10px;
+display: flex;
+justify-content: space-between;
+padding: 10px;
+margin: 10px;
 }
 .logo img {
-  width: 30px; 
-  height: auto; 
-  padding-right: 10px;
+width: 30px; 
+height: auto; 
+padding-right: 10px;
 }
 .wine-store-txt{
-  color: rgb(255, 179, 0);
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+color: rgb(255, 179, 0);
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
