@@ -91,7 +91,6 @@ function App() {
                 <li className="cart-item" key={item.id}>
                   <span>{item.name}</span>
                   <span>${item.price}</span>
-                  
                 </li>
               ))}
             </ul>
